@@ -1,0 +1,21 @@
+[
+  {
+    "category": "camping",
+    "name": "Acampada",
+    "equipments": [
+      {
+        "title": "JUSTCAMP Scott 4",
+        "subtitle": "Tienda de campaña para 4 personas",
+        "description": "Moderna tienda en formato iglú para 4 personas con antecámara cerrada luminosa.",
+        "presentation": "Esta es nuestra la tienda de camapa.<br>Resulta que queremos una prueba",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/71K0oSHXYhL._AC_SL1500_.jpg",
+        "url": "https://amzn.to/3cjshwH",
+        "category": "camping",
+        "rating": {
+          "value": 4.5,
+          "reviews": 246
+        }
+      }
+    ]
+  }
+]

@@ -4,10 +4,11 @@
         color="white"
         dark
         prominent
-        src="https://picsum.photos/1920/1080?random"
+        src="@/assets/img/banner_webpage.jpg"
     >
       <template v-slot:img="{ props }">
         <v-img
+            height="320"
             v-bind="props"
             gradient="to top right, rgba(25, 118, 210, .9), rgba(25, 118, 210, .1)"
         ></v-img>
@@ -60,6 +61,10 @@ export default {
       {
         name: 'Nosotros',
         link: '/about',
+      },
+      {
+        name: 'Equipamiento',
+        link: '/equipment',
       },
     ],
     menuIcons: [
