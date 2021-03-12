@@ -16,7 +16,7 @@
             >
               <v-list-item-content>
                 <v-list-item-title>
-                  #{{ anchor.name | upper }}
+                  <span class="font-weight-bold">#</span>{{ anchor.name | upper }}
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -46,7 +46,7 @@
                 :id="route.category"
                 class="my-8 orange--text text--lighten-1"
             >
-              #{{ route.name | upper }}
+              <span class="font-weight-bold orange--text text--darken-1">#</span>{{ route.name | upper }}
             </h2>
 
             <v-row
@@ -166,6 +166,9 @@ export default {
 
 <style scoped>
 .v-list-item__title {
+  color: lightgray;
+}
+.v-list-item__title > span {
   color: white;
 }
 </style>
