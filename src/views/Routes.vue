@@ -2,7 +2,11 @@
   <v-container>
     <v-row>
       <v-col cols="3" class="d-none d-md-block">
-        <v-sheet rounded="lg">
+        <v-sheet
+            rounded
+            elevation="1"
+            color="secondary"
+        >
           <v-list color="transparent">
             <v-list-item
                 v-for="anchor in anchorLinks"
@@ -12,7 +16,7 @@
             >
               <v-list-item-content>
                 <v-list-item-title>
-                  {{ anchor.name }}
+                  #{{ anchor.name | upper }}
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -38,7 +42,12 @@
               v-for="route in routes"
               :key="route.category"
           >
-            <h2 :id="route.category" class="my-8">{{ route.name }}</h2>
+            <h2
+                :id="route.category"
+                class="my-8 orange--text text--lighten-1"
+            >
+              #{{ route.name | upper }}
+            </h2>
 
             <v-row
                 v-for="item in route.routes"
@@ -156,5 +165,7 @@ export default {
 </script>
 
 <style scoped>
-
+.v-list-item__title {
+  color: white;
+}
 </style>

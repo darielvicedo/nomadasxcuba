@@ -5,6 +5,12 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+Vue.filter('upper', function (value) {
+  if (!value) return '';
+  value = value.toString();
+  return value.toUpperCase();
+})
+
 new Vue({
   vuetify,
   router,
