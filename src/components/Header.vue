@@ -10,7 +10,7 @@
         <v-img
             height="320"
             v-bind="props"
-            gradient="to top right, rgba(25, 118, 210, .9), rgba(25, 118, 210, .1)"
+            gradient="to top right, rgba(25, 118, 210, .8), rgba(25, 118, 210, .05)"
         ></v-img>
       </template>
 
@@ -61,6 +61,10 @@ export default {
       {
         name: 'Nosotros',
         link: '/about',
+      },
+      {
+        name: 'Rutas',
+        link: '/routes',
       },
       {
         name: 'Equipamiento',

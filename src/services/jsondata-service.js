@@ -9,3 +9,7 @@ export function getEquipmentByCategory(category) {
 export function getEquipment() {
   return require('../data/equipment.json');
 }
+
+export function getRoutes() {
+  return require('../data/routes.json');
+}

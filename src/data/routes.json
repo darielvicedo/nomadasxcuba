@@ -1,0 +1,38 @@
+[
+  {
+    "category": "trekking",
+    "name": "Senderismo",
+    "routes": [
+      {
+        "title": "Corazón del Yumurí",
+        "slug": "corazon-del-yumuri",
+        "subtitle": "Auténtico Valle del Yumurí.",
+        "description": "Sendero que atraviesa el corazón del mítico Valle del Yumurí fuera de toda ruta turística. Una noche mágica en la naturaleza más íntima. Baño en las secretas Cascadas de Dos Bocas.",
+        "presentation": "Ruta sdsdsd sd s dsd s d",
+        "cardImage": "https://lh3.googleusercontent.com/pw/ACtC-3f11lh8fQDlBS1bOSDuWGR8I2-Ov9Hzggj5kFOgk6cATAE2ysbZpBLrEoPwGznhJRUrW6G-B8AqeeTE21cbF4wG_nYG0Dt_EjpKB8vWGaCO3hHveGzVjJIMxyHJ2rgnnrCAYG3cMqNEyKGNjy3YuIGK=s963-no?authuser=0",
+        "tags": [
+          {
+            "id": "nights",
+            "title": "Acampar / Noches",
+            "icon": "mdi-tent",
+            "value": "1"
+          },
+          {
+            "id": "distance",
+            "title": "Distancia Total",
+            "icon": "mdi-map-marker-distance",
+            "value": "35 Km"
+          }
+        ],
+        "data": {
+          "difficulty": 3
+        }
+      }
+    ]
+  },
+  {
+    "category": "bikepacking",
+    "name": "Cicloturismo",
+    "routes": []
+  }
+]
