@@ -81,8 +81,10 @@
                         Dificultad {{ item.data.difficulty }} / 10
                       </div>
                     </v-row>
+                  </v-card-text>
 
-                    <div class="my-4 subtitle-1">{{ item.subtitle }}</div>
+                  <v-card-text>
+                    <div class="my-2 subtitle-1">{{ item.subtitle }}</div>
 
                     <div>{{ item.description }}</div>
                   </v-card-text>
@@ -168,6 +170,7 @@ export default {
 .v-list-item__title {
   color: lightgray;
 }
+
 .v-list-item__title > span {
   color: white;
 }
