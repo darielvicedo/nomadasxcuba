@@ -2,26 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="3" class="d-none d-md-block">
-        <v-sheet
-            rounded
-            elevation="1"
-            color="secondary"
-        >
-          <v-list color="transparent">
-            <v-list-item
-                v-for="anchor in anchorLinks"
-                :key="anchor.name"
-                link
-                :href="anchor.anchor"
-            >
-              <v-list-item-content>
-                <v-list-item-title>
-                  <span class="font-weight-bold">#</span>{{ anchor.name | upper }}
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-sheet>
+        <left-nav :links="anchorLinks"></left-nav>
       </v-col>
 
       <v-col md="9" cols="12">
@@ -44,9 +25,9 @@
           >
             <h2
                 :id="route.category"
-                class="my-8 orange--text text--lighten-1"
+                class="my-8 primary--text text--darken-1"
             >
-              <span class="font-weight-bold orange--text text--darken-1">#</span>{{ route.name | upper }}
+              <span class="font-weight-bold primary--text text--lighten-1">#</span>{{ route.name | upper }}
             </h2>
 
             <v-row
@@ -144,9 +125,11 @@
 
 <script>
 import {getRoutes} from "@/services/jsondata-service";
+import LeftNav from "@/components/LeftNav";
 
 export default {
   name: "Routes",
+  components: {LeftNav},
   data: () => ({
     anchorLinks: [
       {
@@ -165,13 +148,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.v-list-item__title {
-  color: lightgray;
-}
-
-.v-list-item__title > span {
-  color: white;
-}
-</style>

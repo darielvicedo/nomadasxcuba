@@ -2,22 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="3" class="d-none d-md-block">
-        <v-sheet rounded="lg">
-          <v-list color="transparent">
-            <v-list-item
-                v-for="anchor in anchorLinks"
-                :key="anchor.name"
-                link
-                :href="anchor.anchor"
-            >
-              <v-list-item-content>
-                <v-list-item-title>
-                  {{ anchor.name }}
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-sheet>
+        <left-nav :links="anchorLinks"></left-nav>
       </v-col>
 
       <v-col cols="9">
@@ -43,7 +28,12 @@
               v-for="equipment in equipments"
               :key="equipment.category"
           >
-            <h2 :id="equipment.category" class="my-8">{{ equipment.name }}</h2>
+            <h2
+                :id="equipment.category"
+                class="my-8 primary--text text--darken-1"
+            >
+              <span class="font-weight-bold primary--text text--lighten-1">#</span>{{ equipment.name | upper }}
+            </h2>
 
             <v-row
                 v-for="item in equipment.equipments"
@@ -108,9 +98,11 @@
 
 <script>
 import {getEquipment} from '@/services/jsondata-service';
+import LeftNav from "@/components/LeftNav";
 
 export default {
   name: "Equipment",
+  components: {LeftNav},
   data: () => ({
     anchorLinks: [
       {
