@@ -35,60 +35,20 @@
               <span class="font-weight-bold primary--text text--lighten-1">#</span>{{ equipment.name | upper }}
             </h2>
 
-            <v-row
-                v-for="item in equipment.equipments"
-                :key="item.url"
-            >
-              <v-col cols="6">
-                <v-card>
-                  <v-img
-                      src="https://images-na.ssl-images-amazon.com/images/I/71K0oSHXYhL._AC_SL1500_.jpg"
-                  ></v-img>
-
-                  <v-card-title>{{ item.title }}</v-card-title>
-
-                  <v-card-text>
-                    <v-row
-                        align="center"
-                        class="mx-0"
-                    >
-                      <v-rating
-                          :value="item.rating.value"
-                          color="secondary"
-                          dense
-                          half-increments
-                          readonly
-                          size="14"
-                      ></v-rating>
-
-                      <div class="grey--text ml-4">
-                        {{ item.rating.value }} ({{ item.rating.reviews }})
-                      </div>
-                    </v-row>
-
-                    <div class="my-4 subtitle-1">{{ item.subtitle }}</div>
-
-                    <div>{{ item.description }}</div>
-                  </v-card-text>
-
-                  <v-divider class="mx-4"></v-divider>
-
-                  <v-card-actions class="justify-end">
-                    <v-btn
-                        color="primary darken-1"
-                        :href="item.url"
-                        target="_blank"
-                    >
-                      <v-icon class="mr-3">mdi-currency-eur</v-icon>
-                      Ver precio
-                    </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-col>
-              <v-col cols="6">
-                <p v-html="item.presentation"></p>
-              </v-col>
-            </v-row>
+            <div class="inverter">
+              <v-row
+                  v-for="(item, index) in equipment.equipments"
+                  :key="item.url"
+                  :class="{'d-flex flex-row-reverse': index % 2 !== 0, 'mb-8': true}"
+              >
+                <v-col cols="6">
+                  <equipment :equipment="item"></equipment>
+                </v-col>
+                <v-col cols="6">
+                  <p v-html="item.presentation"></p>
+                </v-col>
+              </v-row>
+            </div>
           </div>
         </v-sheet>
       </v-col>
@@ -99,10 +59,11 @@
 <script>
 import {getEquipment} from '@/services/jsondata-service';
 import LeftNav from "@/components/LeftNav";
+import Equipment from "@/components/Equipment";
 
 export default {
-  name: "Equipment",
-  components: {LeftNav},
+  name: "EquipmentPage",
+  components: {Equipment, LeftNav},
   data: () => ({
     anchorLinks: [
       {
@@ -118,6 +79,5 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
 </style>

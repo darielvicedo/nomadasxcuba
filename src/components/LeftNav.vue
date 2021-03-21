@@ -22,7 +22,7 @@ export default {
   name: "LeftNav",
   props: {
     links: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
