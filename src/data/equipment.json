@@ -10,10 +10,27 @@
         "presentation": "Nuestra principal tienda de campaña. En ella nos sentimos cómodos y seguros. Es ideal para un campamento de varios días. Al ser de 4 personas tenemos espacio de sobra para los sacos de dormir y todo el equipamiento que no debe quedar a la interperie. Si van a estar varios días en un mismo lugar, esta es la tienda. Mantiene una excelente temperatura tanto en el día como la noche y tiene una carpa impermeable.",
         "img": "https://lh3.googleusercontent.com/pw/ACtC-3fbxvoXaQycKhJXcXYXZbM42uFxvUhYV-9qOg0it-NbL4DortegheS6FODk5UgFiUDgVatC2nsjzBiFIvHdQvFvmf07C4UGn7RjPSBGpUXGUzTyhvP9dBikiBKp3267UEOFsmqlAAk69ULY31NxkA18=w1541-h963-no?authuser=0",
         "url": "https://amzn.to/3cjshwH",
-        "category": "camping",
         "rating": {
           "value": 4.5,
           "reviews": 246
+        }
+      }
+    ]
+  },
+  {
+    "category": "tech",
+    "name": "Tecnología",
+    "equipments": [
+      {
+        "title": "GRDE Cargador Solar 26800mAh Solar",
+        "subtitle": "Power Bank con carga rápida e inalámbrica",
+        "description": "Power Bank con carga rápida Tipo-C, carga inalámbrica QI, 4 modos de iluminación de 18 LED ideal para viajes y acampada.",
+        "presentation": "Uno de nuestros mejores gadgets, tanto es así que tenemos dos. No solo nos permite cargar nuestros dispositivos (2 teléfonos y 2 smartwatches) con carga rápida o inalámbrica, sino que nos brinda luz ambiente casi que indefinidamente. Para poner ejemplo: con el power bank al 100% de su capacidad cargamos los dos teléfonos, los dos relojes inteligentes, nos alumbramos desde que oscurece hasta que dormimos y se queda al 50%. Luego por si fuera poco lo pones al sol todo el día y recupera algo de lo perdido. La luz led es tan potente que en su modo más alto llega a molestar en un ambiente pequeño, por suerte tiene otro modo ambiente y dos modos más de socorro. Es una compra sin equivocación.",
+        "img": "https://lh3.googleusercontent.com/PnCGbPRRCUpNfrAJiJT0_49ER9YzNct51yNs1IvqdZlHhO7gD844Xc10whrjBiDX7A8M0sZUarOhHy3zpQ-X1gTgupg7haGHtc2MVxZSu6NcQkJrDi3xW6UNDpUyX7ithEU73lfjBDgKuyW3LN7h5-XBfteNkWsYLC0x22ubTnJ3g_zdlDGXTGVp-DdiysCM2Vn51lnfcB64Yvlj4JSLWl4Mwj1fX250VDepTSrvVMdB2H9_kfuWKH9cHc3qo5N_NTCQgfGDPAjG5Z61tZ6pjwAPmmbonkombEmtdpHdBwcuwXHk58KZliSu53hCissj_PrEEBfhH5yVOc-OqqAX8hkRbHEzQv5zyahTb0Flt8o88_HFtTAf7g9ARdal-3aDQ9FznSBtZbT1IqUhN31HiJ_L8khRYkGIpEEue6mY02LFLcmMPNROgy1kIwFqJIshWemRvAbpI0MIzOoruEQzqXEEL04Ju1q4UAkCHkD1XKZgA5xzRZ2R661zZS4EN2NoGJGQbDBsjQjbh2T3as_Cc8x3RifyBGTRCa6OaU0f-Ca2v2iBCx_grvmSQHZKvRuiD8M44synd7JXSI4_-XYwd2j3a9ILDKYjBbKD7O29_gmizMrd9psF5C-lXVtEVHQRlsUAiVKj2qTNBpLwdFTF8G_0ZUPOOKlEu7c44hYdZX_EROre7HlYH1L2t_H5XYLFqgecK9iFb45RITdYC93fjhg=w622-h389-no?authuser=0",
+        "url": "https://amzn.to/3sgqIGF",
+        "rating": {
+          "value": 4.1,
+          "reviews": 1691
         }
       }
     ]

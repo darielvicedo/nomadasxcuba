@@ -5,11 +5,11 @@
         <left-nav :links="anchorLinks"></left-nav>
       </v-col>
 
-      <v-col cols="9">
+      <v-col cols="12" md="9">
         <v-sheet
             min-height="70vh"
             rounded="lg"
-            class="pa-8"
+            class="px-8 pt-8 pb-1"
         >
           <h1 class="mb-4">Nuestro Equipamiento</h1>
           <p>
@@ -39,13 +39,13 @@
               <v-row
                   v-for="(item, index) in equipment.equipments"
                   :key="item.url"
-                  :class="{'d-flex flex-row-reverse': index % 2 !== 0, 'mb-8': true}"
+                  :class="{'d-flex flex-row-reverse': index % 2 !== 0, 'mb-3 pa-1 rounded': true, 'equipment-row': true}"
               >
-                <v-col cols="6">
+                <v-col cols="12" md="6" class="pa-0">
                   <equipment :equipment="item"></equipment>
                 </v-col>
-                <v-col cols="6">
-                  <p v-html="item.presentation"></p>
+                <v-col cols="12" md="6">
+                  <p class="text-justify font-weight-medium" v-html="item.presentation"></p>
                 </v-col>
               </v-row>
             </div>
@@ -70,6 +70,10 @@ export default {
         name: 'Acampada',
         anchor: '#camping',
       },
+      {
+        name: 'Tecnología',
+        anchor: '#tech',
+      },
     ],
     equipments: [],
   }),
@@ -80,4 +84,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.equipment-row {
+  background-color: #BBDEFB;
+}
 </style>
