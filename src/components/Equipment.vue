@@ -1,5 +1,8 @@
 <template>
-  <v-card>
+  <v-card
+      outlined
+      style="border: thin solid #BBDEFB;"
+  >
     <v-img
         :src="equipment.img"
     ></v-img>

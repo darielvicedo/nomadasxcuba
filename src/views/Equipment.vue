@@ -39,7 +39,7 @@
               <v-row
                   v-for="(item, index) in equipment.equipments"
                   :key="item.url"
-                  :class="{'d-flex flex-row-reverse': index % 2 !== 0, 'mb-3 pa-1 rounded': true, 'equipment-row': true}"
+                  :class="{'d-flex flex-row-reverse': index % 2 !== 0, 'mb-3 pa-0 rounded': true, 'equipment-row': true}"
               >
                 <v-col cols="12" md="6" class="pa-0">
                   <equipment :equipment="item"></equipment>
@@ -85,6 +85,7 @@ export default {
 
 <style scoped lang="scss">
 .equipment-row {
-  background-color: #BBDEFB;
+  border: 2px solid #BBDEFB;
+  background-color: #E3F2FD;
 }
 </style>
