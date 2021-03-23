@@ -12,7 +12,7 @@
             class="px-8 pt-8 pb-1"
         >
           <h1 class="mb-4">Nuestro Equipamiento</h1>
-          <p>
+          <p class="text-justify">
             Aqui te presentamos el equipo que usamos en nuestras aventuras.
             No encontrarás nada que no usemos nosotros mismos y que no hayamos probado miles de veces,
             ni que no estemos convencidos de su calidad.

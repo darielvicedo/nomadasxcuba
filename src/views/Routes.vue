@@ -13,7 +13,7 @@
         >
           <h1 class="mb-4">Rutas</h1>
 
-          <p>
+          <p class="text-justify">
             Una lista curada de nuestras rutas.
           </p>
 
